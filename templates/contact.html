@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+<h1 class="text-center">{% block title %} Contact Us {% endblock %}</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="email"
+               placeholder="email address" class="form-control"
+               value="{{ request.form['email'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="content">Message</label>
+        <textarea name="content" placeholder="Your message"
+                  class="form-control">{{ request.form['content'] }}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone"
+               placeholder="Your phone number" class="form-control"
+               value="{{ request.form['phone'] }}"></input>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+<footer>
+    <p class="text-center"> Copyright © 2023</p>
+</footer>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="text-center">{% block title %} Our Story {% endblock %}</h1>
+<div>
+<p class="text-center">We are a team of three passionate individuals dedicated to bringing you the best experience possible.</p>
+    <div class="founder-container">
+        <h2 class="text-center">Ricky</h2>
+        <p class="text-center">Ricky is a co-founder of Pixies. Adam brings months of experience in building and managing teams, digital strategy, design, marketing and product management. </p>
+        <img src="{{ url_for('static', filename='img/i.jpg') }}" alt="Founder 1"  class="responsive text-center" style="display: block; margin: 0 auto;">
+    </div>
+</br>
+    <div class="founder-container">
+        <h2 class="text-center">Sasha</h2>
+        <p class="text-center">Sasha oversees the Pixies UX team and has over 7 years of experience building and managing design teams for large scale web based applications. Sasha is passionate about creating thoughtful user experiences and easy-to use interfaces that help end-users and the clients we work with achieve their goals.</p>
+        <img src="{{ url_for('static', filename='img/ii.jpg') }}" alt="Founder 2"  class="responsive text-center" style="display: block; margin: 0 auto;">
+    </div>
+</br>
+    <div class="founder-container">
+        <h2 class="text-center"> Eugene</h2>
+        <p class="text-center">Eugene has over months of experience in software development. He has experience building digital products across a wide range of industries such as eCommerce.</p>
+        <img src="{{ url_for('static', filename='img/iii.jpg') }}" alt="Founder 3"  class="responsive text-center" style="display: block; margin: 0 auto;">
+    </div>    
+</div>
+{% endblock %}

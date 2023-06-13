@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="top_section" class="banner_main">
+    <div class="container">
+        <div class="row d_flex justify-content-center">
+
+            
+            <div class="services">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="titlepage text_align_center">
+                                <h1 class="text-center">Web Development</h1>
+                                <p class= "text-center">We design and develop websites, apps and digital experiences that help our clients grow, innovate, and transform. We listen, learn and understand before we build. We identify your goals together, then use our expertise to find that sweet spot of realistic and impactful.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <img src="{{ url_for('static', filename='img/2.jpg') }}" alt="#" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="titlepage text_align_center">
+                        <h1 class="text-center">Web Design</h1>
+                        <p class= "text-center">Beautifully designed and collaboratively concepted websites that deliver best-in-class experiences to your users.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <img src="{{ url_for('static', filename='img/3.jpg') }}" alt="#" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+
+   
+
+</div>
+
+{% endblock %}
+
